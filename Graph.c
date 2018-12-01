@@ -4,6 +4,8 @@
 #include "LinkedList.h"
 #include "Graph.h"
 
+
+
 void GraphInit(Graph *pg, int nv){
     pg->rout = (List*)malloc(sizeof(List)*nv);
     pg->visitInfo= (int *)malloc(sizeof(int) * nv);
@@ -19,7 +21,7 @@ void AddEdge(Graph *pg, City fromV, City toV){
 
 void ShowGraphEdgeInfo(Graph *pg){
     int adjV;
-    for(int i=0; i<100; i++)    {
+    for(int i=0; i<MAXCITY; i++)    {
         printf("%d와 연결된 vertix: ", i);
         if(LFirst(&(pg->rout[i]), &adjV))        {
             printf("%d ", adjV);
