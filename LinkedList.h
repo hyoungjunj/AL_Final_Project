@@ -4,10 +4,9 @@
 #define TRUE	1
 #define FALSE	0
 
-#define MAXCITY 7
-#define MAXEDGE 10
+#define MAXCITY 100
+#define MAXEDGE 50
 #define inf 2147483647		// 추가
-
 
 typedef int TIME;
 
